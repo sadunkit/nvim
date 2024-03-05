@@ -1,5 +1,9 @@
 require("theprimeagen")
 
+vim.g.mapleader = " "
+
+vim.keymap.set("n", "<M-1>", vim.cmd.Ex)
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
