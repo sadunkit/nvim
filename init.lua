@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<M-1>", vim.cmd.Ex)
 
+vim.opt.shell = "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -33,3 +34,6 @@ vim.keymap.set('n', '<leader>p', '"+p', { noremap = true })
 vim.keymap.set('n', '<leader>P', '"+P', { noremap = true })
 vim.keymap.set('v', '<leader>p', '"+p', { noremap = true })
 vim.keymap.set('v', '<leader>P', '"+P', { noremap = true })
+
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
+
