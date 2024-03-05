@@ -1,4 +1,4 @@
-require("theprimeagen")
+require("packerinit")
 
 vim.g.mapleader = " "
 
@@ -36,4 +36,7 @@ vim.keymap.set('v', '<leader>p', '"+p', { noremap = true })
 vim.keymap.set('v', '<leader>P', '"+P', { noremap = true })
 
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
+
+-- Undo tree
+vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
 
